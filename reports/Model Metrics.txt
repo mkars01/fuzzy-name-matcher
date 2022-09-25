@@ -1,0 +1,46 @@
+Model: XGBClassifier()
+
+Dependent Variable: is_match
+
+Features:
+   The following features were created for first and last names for the list and the transaction.
+		Partial Ratio
+		Token Sort Ratio
+		Token Set Ratio
+		Sum IPA (International Phonetic Alphabet) features
+		PSHP Soundex First
+		Iterative Substring
+		BI-SIM similarity
+		Discounted Levenshtein
+		Prefix Distance
+		Longest Common Substring (LCSstr)
+		Modified Language-Independent Product Name Search Distance (MLIPNS)
+		Strcmp95 Distance
+		Match Rating Algorithm (MRA) Comparison
+		Editex
+		Syllable Alignment Pattern Searching (SAPS) Similarity
+		FlexMetric Distance
+		Jaro-Winkler Distance
+		Higuera-Mico contextual normalized edit distance
+		Sift4 Distance
+		Eudex Distance
+		ALINE Distance
+		Covington Distance
+		Phonetic Edit Distance
+		Hello My Name Is (HMNI) Similarity
+   
+Scaler: StandardScaler()
+
+Cross Validation: RandomizedSearchCV
+
+Parameters:
+   n_estimators: 500
+   max_depth: 10
+   learning_rate: 0.05
+   min_child_weight: 1
+   
+Performance Metrics:
+   Precision: 0.98
+   Recall:    0.98
+   ROC/AUC:   0.998
+
